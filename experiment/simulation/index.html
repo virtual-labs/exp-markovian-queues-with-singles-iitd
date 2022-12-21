@@ -7,6 +7,9 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
 		<!-- Your code goes here-->
@@ -18,70 +21,60 @@
             <a href="mm1n.html">M/M/1/N</a>
             <a href="mmcn.html">M/M/c/N</a>
           </div> -->
-          <div
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            "
-          >
-            <h2>M/M/1</h2>
-          </div>
-          <div
-            class="form-group"
-            style="border: 1px solid black; margin: 10px; padding: 15px; width: 400px"
-          >
-            <label for="ar">Mean Arrival Rate:</label>
-            <input
-              class="form-control"
-              type="number"
-              id="ar"
-              step="0.01"
-              min="0.00"
-            />
-            <br />
-            <label for="sr">Mean Service Rate:</label>
-            <input
-              class="form-control"
-              type="number"
-              id="sr"
-              step="0.01"
-              min="0.00"
-            />
-            <br />
-            <label for="slider" class="form-label">Simulation speed: </label>
-            <input
-              type="range"
-              class="form-range"
-              id="slider"
-              min="10"
-              max="2000"
-              value="1000"
-            />
-          </div>
-          <div style="margin-top: 50px">
-            <button
-              onclick="startSimulation(document.getElementById('ar').value, document.getElementById('sr').value, document.getElementById('slider').value)"
-              class="btn btn-primary"
-            >
-              Start
-            </button>
-            <button onclick="stopSimulation()" class="btn btn-primary">Stop</button>
-            <button onclick="clearChart()" class="btn btn-primary">Clear</button>
-          </div>
+          <div class="form-group" style="border: 0.5px solid rgb(98, 98, 98);
+                     border-radius: 16px;
+                     background: #37474F;
+                     margin: 10px;
+                     padding: 35px;
+                     height: fit-content;
+                     width: 500px;
+                     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);">
+
+                <div style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-bottom: 2em;
+                        color: aliceblue;
+                        ">
+                    <h1 style="font-family: 'Rokkitt', serif;">M/M/1</h1>
+                </div>
+
+
+                <label for="ar">Mean Arrival Rate:</label>
+                <input class="form-control" type="number" id="ar" step="0.01" min="0.00" />
+                <br />
+                <label for="sr">Mean Service Rate:</label>
+                <input class="form-control" type="number" id="sr" step="0.01" min="0.00" />
+                <br />
+                <label for="slider" class="form-label">Simulation speed: </label>
+                <input type="range" class="form-range" id="slider" min="10" max="2000" value="1000" />
+                <div style="margin-top: 30px;
+                            display: flex;
+                            justify-content: center;">
+                    <button
+                        onclick="startSimulation(document.getElementById('ar').value, document.getElementById('sr').value, document.getElementById('slider').value)"
+                        class="button-30" role="button" style="margin-right: 2em; background-color: #02a4d3;">
+                        Start
+                    </button>
+                    <button onclick="stopSimulation()" class="button-30" role="button" style="margin-right: 2em; background-color: #fc5753;">Stop</button>
+                    <button onclick="clearChart()" class="button-30" role="button" style="background-color: #fdbb40;">Clear</button>
+                </div>
+            </div>
+            
           <div style="display: flex; flex-direction: row">
             <div id="chart_div"></div>
             <div class="table-responsive" id="table_div">
               <table
-                class="table table-striped text-successtable-border border-light"
+                class="styled-table"
               >
                 <thead class="border-light">
                   <tr>
                     <th scope="col"></th>
-                    <th scope="col"><strong>Steady State Results</strong></th>
+                    <th scope="col" width = "30%" style="text-align: center;"><strong>Steady State Results</strong></th>
                     <!-- <th scope="col"><strong>Time-dependent Results</strong></th> -->
-                    <th scope="col"><strong id="ex"></strong></th>
+                    <th scope="col" width = "30%" style="text-align: center;"><strong id="ex"></strong></th>
                   </tr>
                 </thead>
                 <tbody>
