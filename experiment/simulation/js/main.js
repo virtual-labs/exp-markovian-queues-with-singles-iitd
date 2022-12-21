@@ -57,6 +57,9 @@ window.onload = function () {
             title: "No. of Customers in System vs Time",
             width: "100%",
             height: "100%",
+            colors: ['#015D57'],
+            backgroundColor: { fill:'transparent' },
+            // fontName:'Arial',
             hAxis: {
                 title: "Time",
             },
