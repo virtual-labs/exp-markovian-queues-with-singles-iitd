@@ -3,7 +3,9 @@
 ### Subject Matter Experts
 | SNo. | Name | Email | Institute | ID |
 | :---: | :---: | :---: | :---: | :---: |
-| 1 | Nikita | nikitagarg998@gmail.com | Central University of Rajasthan, Ajmer | Research Scholar |
+| 1 |  S. Dharmaraja | dharmar(at)maths.iitd.ac.in | Indian Institute of Technology, Delhi | PI |
+| 2 | Vidyottama Jain | vidyottama.jain@curaj.ac.in | Central University of Rajasthan, Ajmer | Co-PI |
+| 3 | Nikita | nikitagarg998@gmail.com | Central University of Rajasthan, Ajmer | Research Scholar |
 
 
 ### Developers
