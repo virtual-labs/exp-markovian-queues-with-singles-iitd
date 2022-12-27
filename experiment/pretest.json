@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Number of customer arriving in a unit time in the queue is represented by?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Mean arrival rate",
+        "b": "Mean service rate",
+        "c": "Simulation speed",
+        "d": "Start"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
