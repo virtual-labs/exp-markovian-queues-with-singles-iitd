@@ -1,2 +1,2 @@
 ### Aim of the experiment
-To write down the code
+The experiment aims to predict the behavior of systems that attempt to provide service for randomly arising demands through M/M/1 model. More specifically, for an independent customer arriving in a system with single server, the number of customer one sees on arrival in the system, the waiting time in the system, the number of customer in the queue, and average service time of a customer can be examined through the experiment.
