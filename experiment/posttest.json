@@ -2,7 +2,8 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Consider a unisex hair salon where customers are served on a first-come, first-served basis. The data show that customers arrive according to a Poisson process with a mean arrival rate of 5 customers per hour. Because of its excellent reputation, customers are always willing to wait. The data further show that the customer processing time is exponentially distributed with an average of 10 minutes per customer. This system can be modeled as a M/M/l queueing system. Then, in the long run, what is the average number of customers in the shop?
+?",
       "answers": {
         "a": "answer1",
         "b": "answer2",
