@@ -10,27 +10,25 @@
         "d": "2"
       },
       "explanations": {
-        "b": "$X_t$ be the random variable denoting the number of customers in the salon at any time t. Then the system can be modeled as a M/M/l queueing system with {Xt;t > 0} as the underlying stochastic process. Here $$\lambda = 5$$ per hour, and $$\mu = 6$$ per hour. Hence, $$\rho =\frac{5}{6}. Thus the average number of customers in the shop is $$L= \frac{\rho}{1-\rho}= 5.$$$$",
+        "b": "$X_t$ be the random variable denoting the number of customers in the salon at any time $t$. Then the system can be modeled as a M/M/l queueing system with ${X_t;t > 0\}$ as the underlying stochastic process. Here $$\lambda = 5$$ per hour, and $$\mu = 6$$ per hour. Hence, $$\rho =\frac{5}{6}. Thus the average number of customers in the shop is $$L= \frac{\rho}{1-\rho}= 5.$$$$",
         
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Consider the New Delhi International Airport. Assume that it has one runway which is used for arrivals only. Airplanes have been found to arrive at a rate of 10 per hour. The time (in minutes) taken for anairplane to land is assumed to follow exponential distribution with mean 3 minutes. Assume that arrivals follow a Poisson process. Without loss of generality, assume that the system is modeled as a M/M/l queueing system. What is the expected number of airplanes waiting to land?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "0.5",
+        "b": "1",
+        "c": "1.5",
+        "d": "2"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Average number of aeroplanes waiting in the queue to land can be calculated as $$L_q=0.5$$. Beacause, the arrival rate is 10 per hour and the service rate is 20 per hour. ",
+        
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
