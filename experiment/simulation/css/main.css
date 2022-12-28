@@ -60,9 +60,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/img2.jpg);
-    background-repeat: repeat;
-    /* background-color: #f4f4f4; */
+    /* background-image: url(../images/img2.jpg);
+    background-repeat: repeat; */
+    background-color: #f4f4f4;
   }
   .form-control {
     font-family: 'Exo', sans-serif;
