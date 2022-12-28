@@ -2,8 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Consider a unisex hair salon where customers are served on a first-come, first-served basis. The data show that customers arrive according to a Poisson process with a mean arrival rate of 5 customers per hour. Because of its excellent reputation, customers are always willing to wait. The data further show that the customer processing time is exponentially distributed with an average of 10 minutes per customer. This system can be modeled as a M/M/l queueing system. Then, in the long run, what is the average number of customers in the shop?
-?",
+      "question": "Consider a unisex hair salon where customers are served on a first-come, first-served basis. The data show that customers arrive according to a Poisson process with a mean arrival rate of 5 customers per hour. Because of its excellent reputation, customers are always willing to wait. The data further show that the customer processing time is exponentially distributed with an average of 10 minutes per customer. This system can be modeled as a M/M/l queueing system. Then, in the long run, what is the average number of customers in the shop?",
       "answers": {
         "a": "answer1",
         "b": "answer2",
@@ -12,7 +11,7 @@
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
+        "b": "$X_t$ be the random variable denoting the number of customers in the salon at any time t. Then the system can be modeled as a M/M/l queueing system with {Xt;t > 0} as the underlying stochastic process. Here $\lambda$ = 5 per hour and $\mu$ = 6 per hour. Hence, $$\rho =\frac{5}{6}. Thus the average number of customers in the shop is $$L= \frac{\rho}{1-\rho}= 5.$$$$",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
