@@ -4,4 +4,4 @@
 ###### Step 3:  Set the simulation speed as per requirement.
 ###### Step 4:  Click the 'Start' button to start the experiment.
 ###### Step 5:  Click the 'Stop' button to stop the experiment, and to view the steady-state result numerically and graphically.
-###### Step 5:  Hence, the theoretical and experimental results can be compared. 
+###### Step 6:  Hence, the theoretical and experimental results can be compared. 
