@@ -1,3 +1,34 @@
+let start_btn = document.getElementById('start_btn');
+let stop_btn = document.getElementById('stop_btn');
+let clear_btn = document.getElementById('clear_btn');
+let running = false;
+
+document.getElementById('start_btn').addEventListener('click', function() {
+    running = true;
+    start_btn.disabled = running;
+    // start_btn.style["background-color"] = "green";
+    // start_btn.setAttribute("style", "background-color: #02a4d3");
+    // stop_btn.setAttribute("style", "background-color: #fc5753");
+    // clear_btn.setAttribute("style", "background-color: #fdbb40");
+    stop_btn.disabled = !running;
+    clear_btn.disabled = running;
+});
+
+document.getElementById('stop_btn').addEventListener('click', function() {
+    running = false;
+    start_btn.disabled = running;
+    stop_btn.disabled = !running;
+    clear_btn.disabled = running;
+});
+
+document.getElementById('clear_btn').addEventListener('click', function() {
+    running = false;
+    start_btn.disabled = running;
+    stop_btn.disabled = !running;
+    clear_btn.disabled = running;
+});
+
+
 let data;
 let options;
 let chart;
@@ -46,6 +77,11 @@ window.onload = function () {
     });
 
     google.charts.setOnLoadCallback(drawChart);
+
+    start_btn.disabled = running;
+    stop_btn.disabled = !running;
+    clear_btn.disabled = running;
+
 
     function drawChart() {
         data = google.visualization.arrayToDataTable([
@@ -261,3 +297,45 @@ function clearChart() {
     cust_total = 0;
     av_st = 0;
 }
+
+
+// let started = false;
+
+// let start_btn = document.querySelector('#start_btn');
+// let stop_btn = document.querySelector('#stop_btn');
+// start_btn.addEventListener('click', ()=>{
+//     started = true;
+// });
+
+// stop_btn.addEventListener('click', ()=>{
+//     started = false;
+// });
+
+
+// $(function () {
+//     start_btn.disabled = !started;
+//     stop_btn.disabled = started;
+// });
+
+
+
+// document.getElementById('start_btn').addEventListener('click', function() {
+//     running = true;
+//     document.getElementById('stop_btn').disabled = !running;
+//     document.getElementById('start_btn').disabled = running;
+//     document.getElementById('clear_btn').disabled = running;
+// });
+
+// document.getElementById('stop_btn').addEventListener('click', function() {
+//     running = false;
+//     document.getElementById('stop_btn').disabled = !running;
+//     document.getElementById('clear_btn').disabled = running;
+//     document.getElementById('start_btn').disabled = running;
+// });
+
+// document.getElementById('clear_btn').addEventListener('click', function() {
+//     running = false;
+//     document.getElementById('stop_btn').disabled = !running;
+//     document.getElementById('clear_btn').disabled = running;
+//     document.getElementById('start_btn').disabled = running;
+// });
