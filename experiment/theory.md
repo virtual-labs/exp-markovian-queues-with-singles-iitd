@@ -1,1 +1,5 @@
-### Link your theory in here
+#### Introduction 
+##### M/M/1 queue is one of the queue that can be modeled as birth death process, which is a specific type of continuous time Markov chain. It consists of a set of states {0, 1, 2,... \} denoting the 'population' of a system. State transitions occur as soon as a customer arrives or departs from the system. Specifically, when the system is in a state $n \geq 0$, the time until the next arrival is exponential random variable with rate $\lambda$. At a random arrival, system moves from state $n$ to $n+1$. When the system is in state $n \geq 1$, the time until the next departure is an exponential random variable with rate $\mu$. At a departure, the system moves from a state $n$ to $n-1$. The states denote the number of customers in the system. The density function of interarrival times and service times are assumed to be exponentially distributed with density function given, respectively as
+##### $a(t)= \lambda e^{-\lambda t} $
+##### $b(t)= \mu e^{-\mu t} $
+##### Let n denotes the number of customers in the system. The rate of arrivals \lambda, and rate of service \mu, is fixed, regardless of the number of customers in the system.
