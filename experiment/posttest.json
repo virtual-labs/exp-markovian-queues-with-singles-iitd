@@ -25,7 +25,7 @@
         "d": "2"
       },
       "explanations": {
-        "a": "Average number of aeroplanes waiting in the queue to land can be calculated as $$L_q=0.5$$. Beacause, the arrival rate is 10 per hour and the service rate is 20 per hour. ",
+        "a": "Average number of Airplanes waiting in the queue to land can be calculated as $$L_q=0.5$$. Beacause, the arrival rate is 10 per hour and the service rate is 20 per hour. ",
         
       },
       "correctAnswer": "a",
