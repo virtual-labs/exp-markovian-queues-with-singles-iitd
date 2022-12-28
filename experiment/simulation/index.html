@@ -6,9 +6,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -55,11 +55,11 @@
                             justify-content: center;">
                     <button
                         onclick="startSimulation(document.getElementById('ar').value, document.getElementById('sr').value, document.getElementById('slider').value)"
-                        class="button-30" role="button" style="margin-right: 2em; background-color: #02a4d3;">
+                        class="button-30" id="start_btn" role="button" style="margin-right: 2em; background-color: #02a4d3;">
                         Start
                     </button>
-                    <button onclick="stopSimulation()" class="button-30" role="button" style="margin-right: 2em; background-color: #fc5753;">Stop</button>
-                    <button onclick="clearChart()" class="button-30" role="button" style="background-color: #fdbb40;">Clear</button>
+                    <button onclick="stopSimulation()" class="button-30" id="stop_btn" role="button" style="margin-right: 2em; background-color: #fc5753;">Stop</button>
+                    <button onclick="clearChart()" class="button-30" id="clear_btn" role="button" style="background-color: #fdbb40;">Clear</button>
                 </div>
             </div>
             
@@ -106,5 +106,6 @@
 	<!-- Add JS at the bottom of HTML file --> 
         <script src="./js/main.js"></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </body>
 </html>
