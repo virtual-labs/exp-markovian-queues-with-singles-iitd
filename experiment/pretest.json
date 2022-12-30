@@ -24,7 +24,7 @@
         "a": "Mean arrival rate = Mean service rate",
         "b": "Mean arrival rate > Mean service rate",
         "c": "Mean arrival rate < Mean service rate",
-        "d": "None of these"
+        "d": "Mean arrival rate $\leq$ Mean service rate"
       },
       "explanations": {
         "a": "For mean arrival rate equals to mean service rate, traffic intensity equals to 1, which leads infinite number of customers in the system",
