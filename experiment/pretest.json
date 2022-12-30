@@ -34,6 +34,23 @@
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the relationship between mean arrival rate and mean service rate for the existence of a steady-state solution?",
+      "answers": {
+        "a": "Mean arrival rate = Mean service rate",
+        "b": "Mean arrival rate > Mean service rate",
+        "c": "Mean arrival rate < Mean service rate",
+        "d": "Mean service rate is independent of mean arrival rate for the existence of steady state solution"
+      },
+      "explanations": {
+        "a": "For mean arrival rate equals to mean service rate, traffic intensity equals to 1, which leads infinite number of customers in the system",
+        "b": "In this case, system will collapse due to more arrival in comparison to service in a unit time",
+        "c": "This leads to steady state solution as arrivals are less than service in a unit time",
+        "d": "As 'c' is correct, this is not correct option"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     }
   ]
 }
