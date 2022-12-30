@@ -24,7 +24,7 @@
         "a": "Mean arrival rate = Mean service rate",
         "b": "Mean arrival rate > Mean service rate",
         "c": "Mean arrival rate < Mean service rate",
-        "d": "Mean arrival rate $\leq$ Mean service rate"
+        "d": "Mean service rate is independent of mean arrival rate for the existence of steady state solution"
       },
       "explanations": {
         "a": "For mean arrival rate equals to mean service rate, traffic intensity equals to 1, which leads infinite number of customers in the system",
