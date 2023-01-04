@@ -10,7 +10,7 @@
         "d": "2"
       },
       "explanations": {
-        "b": "$X_t$ be the random variable denoting the number of customers in the salon at any time $t$. Then the system can be modeled as a M/M/l queueing system with ${X_t;t > 0}$ as the underlying stochastic process. Here, arrival rate is 5 customers per hour, and service rate is 6 customers per hour. Hence, $$\rho =\frac{5}{6}. Thus the average number of customers in the shop is $$L= \frac{\rho}{1-\rho}= 5.$$$$",
+        "b": "$X_t$ be the random variable denoting the number of customers in the salon at any time $t$. Then the system can be modeled as a M/M/l queueing system with ${X_t;t > 0}$ as the underlying stochastic process. Here, arrival rate is 5 customers per hour, and service rate is 6 customers per hour. Hence, $$\rho =\frac{5}{6}$$. Thus the average number of customers in the shop is $$L= \frac{\rho}{1-\rho}= 5.$$",
         },
       "correctAnswer": "b",
       "difficulty": "beginner"
