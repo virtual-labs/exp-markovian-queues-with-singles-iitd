@@ -1,17 +1,33 @@
 let start_btn = document.getElementById('start_btn');
 let stop_btn = document.getElementById('stop_btn');
 let clear_btn = document.getElementById('clear_btn');
+let ar_input = document.getElementById('ar'); 
+let sr_input = document.getElementById('sr'); 
 let running = false;
 
+ar_input.addEventListener('keyup', function() {
+    if(ar_input.value <= 0) {
+        ar_input.value = '';
+    }
+});
+
+sr_input.addEventListener('keyup', function() {
+    if(sr_input.value <= 0) {
+        sr_input.value = '';
+    }
+});
+
 document.getElementById('start_btn').addEventListener('click', function() {
-    running = true;
-    start_btn.disabled = running;
+    if(ar_input.value.length>0 && sr_input.value.length > 0) {
+        running = true;
+        start_btn.disabled = running;
+        stop_btn.disabled = !running;
+        clear_btn.disabled = running;
+    }
     // start_btn.style["background-color"] = "green";
     // start_btn.setAttribute("style", "background-color: #02a4d3");
     // stop_btn.setAttribute("style", "background-color: #fc5753");
     // clear_btn.setAttribute("style", "background-color: #fdbb40");
-    stop_btn.disabled = !running;
-    clear_btn.disabled = running;
 });
 
 document.getElementById('stop_btn').addEventListener('click', function() {
