@@ -13,7 +13,8 @@
 #### This gives $$p_0=1-\rho, \quad for~ \rho<1,$$
 #### and $$p_n=(1-\rho)\rho^n, \quad for~ \rho<1.$$
 #### which is the full steady-state solution for the M/M/1 system. The existence of a steady-state solution depends on the condition that $\rho<1$ or $\lambda<\mu$. This is intuitive, for if $\lambda>\mu$, the mean arrival rate is greater than the mean service rate, so the system size increases without bound over time. Note that the system is perfectly balanced when $\lambda=\mu$, but is unsatble, since it has no spare service capacity to handle random variation in arrivals and services.
-* ### Average number of customers in the system $(L)$ is given by $$L= \sum_{j=0}^{\infty}{jp_j}=\frac{\rho}{1-\rho}.$$
-* ### Average number of customers waiting in the queue for service $(L_q)$ can be obtained as $$L_q=L-\frac{\lambda}{\mu}.$$
-* ### Average time a customer spends in the system $(W)$ is obtained using Little's law, $L=\lambda W$, and is given as $$W=\frac{1}{\mu-\lambda}.$$
-* ### For the service time random variable $X$, average service time of a customer $(E[X])$ can be evaluated as $$E[X]=\frac{1}{\mu}.$$
+### Performance Measures:
+* #### Average number of customers in the system $(L)$ is given by $$L= \sum_{j=0}^{\infty}{jp_j}=\frac{\rho}{1-\rho}.$$
+* #### Average number of customers waiting in the queue for service $(L_q)$ can be obtained as $$L_q=L-\frac{\lambda}{\mu}.$$
+* #### Average time a customer spends in the system $(W)$ is obtained using Little's law, $L=\lambda W$, and is given as $$W=\frac{1}{\mu-\lambda}.$$
+* #### For the service time random variable $X$, average service time of a customer $(E[X])$ can be evaluated as $$E[X]=\frac{1}{\mu}.$$
