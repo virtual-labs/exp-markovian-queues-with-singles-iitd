@@ -17,4 +17,5 @@
 * #### Average number of customers in the system $(L)$ is given by $$L= \sum_{j=0}^{\infty}{jp_j}=\frac{\rho}{1-\rho}.$$
 * #### Average number of customers waiting in the queue for service $(L_q)$ can be obtained as $$L_q=L-\frac{\lambda}{\mu}.$$
 * #### Average time a customer spends in the system $(W)$ is obtained using Little's law, $L=\lambda W$, and is given as $$W=\frac{1}{\mu-\lambda}.$$
+* #### Average time a customer spends in the queue $(W_q)$ is obtained using Little's law, $L_q=\lambda W_q$, and is given as $$W_q=\frac{\rho}{\mu-\lambda}.$$
 * #### For the service time random variable $X$, average service time of a customer $(E[X])$ can be evaluated as $$E[X]=\frac{1}{\mu}.$$
