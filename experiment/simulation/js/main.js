@@ -223,6 +223,9 @@ function drawTable() {
     let ex_st = av_st / (cust_total - cust + 1);
     // Time in queue
     let ex_qt = av_cust_q / num_wait;
+    if(num_wait==0) {
+        ex_qt = 0.0;
+    }
     let th_qt = th_cq / ar;
 
 
