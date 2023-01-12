@@ -59,6 +59,7 @@ let sr;
 let av_time_s;
 let cust_total;
 let av_st;
+let num_wait;
 
 class Queue {
     constructor() {
@@ -163,6 +164,7 @@ function startSimulation(arrival_rate, service_rate, speed) {
     let nextTime = -Math.log(U) / ar;
     let q = new Queue();
     chartId = setInterval(function () {
+        // Departure
         if (in_use && sTime < nextTime) {
             av_cust_s += cust * (sTime - time);
             av_cust_q += (cust - 1) * (sTime - time);
@@ -175,7 +177,9 @@ function startSimulation(arrival_rate, service_rate, speed) {
                 sTime = time - Math.log(U) / sr;
                 av_st -= Math.log(U) / sr;
             } else in_use = false;
-        } else {
+        } 
+        // Arrival
+        else {
             av_cust_s += cust * (nextTime - time);
             if (cust) av_cust_q += (cust - 1) * (nextTime - time);
             time = nextTime;
@@ -184,12 +188,15 @@ function startSimulation(arrival_rate, service_rate, speed) {
             cust++;
             cust_total++;
             U = Math.random();
+            // nextTime is Next arrival time
             nextTime = time - Math.log(U) / ar;
             if (!in_use) {
                 in_use = true;
                 U = Math.random();
                 sTime = time - Math.log(U) / sr;
                 av_st -= Math.log(U) / sr;
+            } else {
+                num_wait += 1;
             }
         }
         data.addRow([time, cust]);
@@ -210,10 +217,15 @@ function drawTable() {
     let ex_cs = av_cust_s / time;
     let th_cq = th_cs * rho;
     let ex_cq = av_cust_q / time;
-    let ex_st = av_st / (cust_total - cust + 1);
     let th_ts = th_cs / ar;
     let ex_ts = av_time_s / cust_total;
     let th_st = 1 / sr;
+    let ex_st = av_st / (cust_total - cust + 1);
+    // Time in queue
+    let ex_qt = av_cust_q / num_wait;
+    let th_qt = th_cq / ar;
+
+
     console.log(ar);
     console.log(sr);
     console.log({'ar':ar, 'sr':sr}, ar<sr, 'rho >= 1')
@@ -237,12 +249,20 @@ function drawTable() {
             ex_ts >= 0 && ex_ts != NaN
                 ? ex_ts.toFixed(2)
                 : "Unable to calculate results";
-        document.getElementById("th_st").innerHTML =
+        // document.getElementById("th_st").innerHTML =
+        //     "Steady state solution does not exist";
+        // document.getElementById("ex_st").innerHTML =
+        //     ex_st >= 0 && ex_st != NaN
+        //         ? ex_st.toFixed(2)
+        //         : "Unable to calculate results";
+
+        document.getElementById("th_qt").innerHTML =
             "Steady state solution does not exist";
-        document.getElementById("ex_st").innerHTML =
-            ex_st >= 0 && ex_st != NaN
-                ? ex_st.toFixed(2)
+        document.getElementById("ex_qt").innerHTML =
+            ex_qt >= 0 && ex_qt != NaN
+                ? ex_qt.toFixed(2)
                 : "Unable to calculate results";
+        
         document.getElementById("ex").innerHTML =
             "Time-dependent Results (Simulation time: " +
             (time.toFixed(2) >= 0
@@ -274,14 +294,24 @@ function drawTable() {
             ex_ts >= 0 && ex_ts != NaN
                 ? ex_ts.toFixed(2)
                 : "Unable to calculate results";
-        document.getElementById("th_st").innerHTML =
-            th_st >= 0 && th_st != NaN
-                ? th_st.toFixed(2)
+        // document.getElementById("th_st").innerHTML =
+        //     th_st >= 0 && th_st != NaN
+        //         ? th_st.toFixed(2)
+        //         : "Unable to calculate results";
+        // document.getElementById("ex_st").innerHTML =
+        //     ex_st >= 0 && ex_st != NaN
+        //         ? ex_st.toFixed(2)
+        //         : "Unable to calculate results";
+
+        document.getElementById("th_qt").innerHTML =
+            th_qt >= 0 && th_qt != NaN
+                ? th_qt.toFixed(2)
                 : "Unable to calculate results";
-        document.getElementById("ex_st").innerHTML =
-            ex_st >= 0 && ex_st != NaN
-                ? ex_st.toFixed(2)
+        document.getElementById("ex_qt").innerHTML =
+            ex_qt >= 0 && ex_qt != NaN
+                ? ex_qt.toFixed(2)
                 : "Unable to calculate results";
+
         document.getElementById("ex").innerHTML =
             "Time-dependent Results (Simulation time: " +
             (time.toFixed(2) >= 0
@@ -312,6 +342,7 @@ function clearChart() {
     av_time_s = 0;
     cust_total = 0;
     av_st = 0;
+    num_wait = 0;
 }
 
 
