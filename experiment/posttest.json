@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Consider a unisex hair salon where customers are served on a first-come, first-served basis. The data show that customers arrive according to a Poisson process with a mean arrival rate of 5 customers per hour. Because of its excellent reputation, customers are always willing to wait. The data further show that the customer processing time is exponentially distributed with an average of 10 minutes per customer. This system can be modeled as a M/M/l queueing system. Then, in the long run, what is the average number of customers in the shop?",
+      "question": "Consider a unisex hair salon where customers are served on a first-come, first-served basis. The data show that customers arrive according to a Poisson process with a mean arrival rate of 5 customers per hour. Because of its excellent reputation, customers are always willing to wait. The data further show that the customer processing time is exponentially distributed with an average of 10 minutes per customer. This system can be modeled as a M/M/1 queueing system. Then, in the long run, what is the average number of customers in the shop?",
       "answers": {
         "a": "10",
         "b": "5",
@@ -16,7 +16,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Consider a unisex hair salon where customers are served on a first-come, first-served basis. The data show that customers arrive according to a Poisson process with a mean arrival rate of 5 customers per hour. Because of its excellent reputation, customers are always willing to wait. The data further show that the customer processing time is exponentially distributed with an average of 10 minutes per customer. This system can be modeled as a M/M/l queueing system. What is the average number of customers waiting for a haircut?",
+      "question": "Consider a unisex hair salon where customers are served on a first-come, first-served basis. The data show that customers arrive according to a Poisson process with a mean arrival rate of 5 customers per hour. Because of its excellent reputation, customers are always willing to wait. The data further show that the customer processing time is exponentially distributed with an average of 10 minutes per customer. This system can be modeled as a M/M/1 queueing system. What is the average number of customers waiting for a haircut?",
       "answers": {
         "a": "4.16",
         "b": "5.16",
@@ -30,7 +30,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Consider the New Delhi International Airport. Assume that it has one runway which is used for arrivals only. Airplanes have been found to arrive at a rate of 10 per hour. The time (in minutes) taken for anairplane to land is assumed to follow exponential distribution with mean 3 minutes. Assume that arrivals follow a Poisson process. Without loss of generality, assume that the system is modeled as a M/M/l queueing system. What is the expected number of airplanes waiting to land?",
+      "question": "Consider the New Delhi International Airport. Assume that it has one runway which is used for arrivals only. Airplanes have been found to arrive at a rate of 10 per hour. The time (in minutes) taken for an airplane to land is assumed to follow exponential distribution with mean 3 minutes. Assume that arrivals follow the Poisson process. Without loss of generality, assume that the system is modeled as a M/M/1 queueing system. What is the expected number of airplanes waiting to land?",
       "answers": {
         "a": "0.5",
         "b": "1",
@@ -44,7 +44,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Consider the Mumbai International Airport. Assume that it has one runway which is used for arrivals only. Airplanes have been found to arrive at a rate of 10 per hour. The time (in minutes) taken for anairplane to land is assumed to follow exponential distribution with mean 3 minutes. Assume that arrivals follow a Poisson process. Without loss of generality, assume that the system is modeled as a M/M/l queueing system. Find the expected waiting time to land?",
+      "question": "Consider the Mumbai International Airport. Assume that it has one runway which is used for arrivals only. Airplanes have been found to arrive at a rate of 10 per hour. The time (in minutes) taken for an airplane to land is assumed to follow exponential distribution with mean 3 minutes. Assume that arrivals follow the Poisson process. Without loss of generality, assume that the system is modeled as a M/M/1 queueing system. Find the expected waiting time to land?",
       "answers": {
         "a": "0.05",
         "b": "0.01",
