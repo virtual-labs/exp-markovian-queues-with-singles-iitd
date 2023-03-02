@@ -1,0 +1,40 @@
+
+/home/runner/work/exp-markovian-queues-with-singles-iitd/exp-markovian-queues-with-singles-iitd/experiment/simulation/js/main.js
+   60:5   warning  '$' is not defined                           no-undef
+  108:5   warning  'google' is not defined                      no-undef
+  112:5   warning  'google' is not defined                      no-undef
+  125:16  warning  'google' is not defined                      no-undef
+  147:21  warning  'google' is not defined                      no-undef
+  195:20  warning  '$' is not defined                           no-undef
+  196:5   warning  '$' is not defined                           no-undef
+  218:9   warning  '$' is not defined                           no-undef
+  218:28  warning  '$' is not defined                           no-undef
+  221:26  warning  'google' is not defined                      no-undef
+  240:10  warning  'startSimulation' is defined but never used  no-unused-vars
+  320:9   warning  'th_st' is assigned a value but never used   no-unused-vars
+  321:9   warning  'ex_st' is assigned a value but never used   no-unused-vars
+  347:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  353:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  359:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  366:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  383:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  387:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  391:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  395:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  399:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  403:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  416:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  420:27  warning  Use the isNaN function to compare with NaN   use-isnan
+  430:59  warning  Use the isNaN function to compare with NaN   use-isnan
+  431:59  warning  Use the isNaN function to compare with NaN   use-isnan
+  432:59  warning  Use the isNaN function to compare with NaN   use-isnan
+  433:59  warning  Use the isNaN function to compare with NaN   use-isnan
+  435:53  warning  Use the isNaN function to compare with NaN   use-isnan
+  436:53  warning  Use the isNaN function to compare with NaN   use-isnan
+  437:53  warning  Use the isNaN function to compare with NaN   use-isnan
+  438:53  warning  Use the isNaN function to compare with NaN   use-isnan
+  441:10  warning  'stopSimulation' is defined but never used   no-unused-vars
+  450:12  warning  'google' is not defined                      no-undef
+
+✖ 35 problems (0 errors, 35 warnings)
+
